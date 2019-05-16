@@ -1,0 +1,285 @@
+@import (url("https://fonts.googleapis.com/css?family=Kodchasan"));
+
+body{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    /* Font Properties */
+    font-family: 'Kodchasan', sans-serif;
+    /* Spacing */
+    margin: 0;
+}
+/* Header CSS */
+header{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    /* Sizing */
+    height: 100vh;
+    width: 100vw;
+    /* Background Properties */
+    background-image: url("https://images.unsplash.com/photo-1470062434883-174352796ce9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
+}
+nav{
+    /* Flex Properties */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Sizing */
+    height: 20%;
+    width: 100%;
+    /* Animation */
+    animation-name: load;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.brand{
+    /* Font Properties */
+    font-size: 2em;
+    font-weight: 250;
+    /* Spacing */
+    margin-left: 3em;
+}
+.about-us{
+    /* Font Properties */
+    font-size: 1.1em;
+    /* Spacing */
+    margin-right: 3em;
+}
+.link{
+    /* Font-properties */
+    color: white;
+    text-decoration: none;
+}
+.about-item{
+    /* Spacing */
+    margin-right: 2rem;
+}
+.header-jumbotron{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Font Properties */
+    color: white;
+    /* Position Properties */
+    position: relative;
+    /* Spacing */
+    margin: 10%;
+    /* Animation */
+    animation-name: loadJumbotron;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes loadJumbotron{
+    0%{
+        opacity: 0;
+        top: 2em;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+.site-title{
+    /* Font Properties */
+    font-size: 4em;
+    font-weight: 300;
+    /* Spacing */
+    margin: 0;
+}
+.site-lead{
+    /* Font Properties */
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.header-button{
+    /* Font Properties */
+    color: white;
+    /* Background Properties */
+    background-color: purple;
+    /* Border Properties */
+    border-radius: 10px;
+    /* Sizing */
+    height: 5vh;
+    width: 15vw;
+}
+/* Main Contents */
+/* Destination Section */
+.title-container{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Sizing */
+    height: 100%;
+    width: 100vw;
+    
+    /* Spacing */
+    padding: 10vh 0;
+}
+
+.jumbotron{
+    /* Font Properties */
+    color: #6b6d70;
+    /* Text Properties */
+    text-align: center;
+    /* Sizing */
+    height: 30%;
+    /* Spacing */
+    margin: 6em 15em;
+    margin-top: 0;
+}
+.title-title{
+    /* Font Properties */
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.title-lead{
+    /* Font Properties */
+    font-size: 0.9em;
+    /* Text Properties */
+    line-height: 2.5em;
+}
+hr{
+    border: solid 2px #1d71f7;
+    width: 35%;
+}
+.gallery{
+    /* Flex Properties */
+    display: flex;
+    flex-wrap: wrap;
+    /* Sizing */
+    height: 70vh;
+    width: 70%;
+    /* Spacing */
+    margin: 0 auto;
+}
+.picture{
+    /* Flex Properties */
+    flex-basis: 400px;
+    /* Sizing */
+    height: 45%;
+    /* Background Properties */
+    background-size: cover;
+    /* Spacing */
+    margin: 0.5em;
+}
+.picture:nth-child(1){
+    /* Background Properties */
+    background-image:url("https://images.unsplash.com/photo-1552570718-53d981b4c140?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80");
+}
+.picture:nth-child(2){
+    /* Background Properties */
+    background-image:url("https://images.unsplash.com/photo-1547297158-3e891757a6f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80");
+}
+.picture:nth-child(3){
+    /* Background Properties */
+    background-image:url("https://images.unsplash.com/photo-1543949879-4ea269a7a1a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2178&q=80");
+}
+.picture:nth-child(4){
+    /* Background Properties */
+    background-image:url("https://images.unsplash.com/photo-1549880338-6b377789d84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+}
+.picture:nth-child(2), .picture:nth-child(3){
+    /* Flex Properties */
+    flex-grow: 3;
+}
+
+/* Tour Section */
+.tour{
+    /* Background Properties */
+    background-color:#c1c1c1;
+}
+.jumbotron:nth-child(2){
+    /* Spacing */
+    margin-bottom: 0;
+}
+.options{
+    /* Flex Properties */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Spacing */
+    margin: 0 8%;
+}
+.option{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 45%;
+    /* Font Properties */
+    color: #6b6d70;
+    font-weight: 250;
+    /* Text Properties */
+    text-align: center;
+    /* Sizing */
+    height: 50%;
+}
+.option:nth-child(3), .option:nth-child(4){
+    margin-top: 6em;
+}
+i{
+    color: #4f8ef2;
+}
+/* Testimonial Section */
+.container{
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Font Properties */
+    font-size: 1.5em;
+    font-weight: 250;
+    /* Sizing */
+    width: 65%;
+    /* Text Properties */
+    text-align: center;
+    /* Spacing */
+    margin: 0 auto;
+}
+
+blockquote{
+    /* Text Properties */
+    line-height: 1.5em;
+}
+cite{
+    /* Font Properties */
+    font-size: 0.8em !important;
+    /* Spacing */
+    margin-bottom: 3em;
+}
+
+.learn-more{
+    background-color:#c1c1c1;
+}
+input{
+    height: 5vh;
+    width: 50%;
+}
+.subscription{
+    /* Flex Properties */
+    display: flex;
+    justify-content: center;
+    /* Sizing */
+    width: 60%;
+    /* Spacing */
+    margin: 0 auto;
+}
+.subscribe{
+    background-color: #ca59ff;
+    color: white;
+}
