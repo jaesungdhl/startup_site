@@ -111,6 +111,7 @@ nav{
     background-color: purple;
     /* Border Properties */
     border-radius: 10px;
+    border: none;
     /* Sizing */
     height: 5vh;
     width: 15vw;
@@ -267,19 +268,43 @@ cite{
     background-color:#c1c1c1;
 }
 input{
+    /* Border Properties */
+    border-radius: 10px;
+    /* Sizing */
     height: 5vh;
     width: 50%;
+    /* Spacing */
+    padding: 0 2vw;
 }
 .subscription{
     /* Flex Properties */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     /* Sizing */
     width: 60%;
     /* Spacing */
     margin: 0 auto;
 }
 .subscribe{
+    /* Background Properties */
     background-color: #ca59ff;
+    /* Font Properties */
     color: white;
+    /* Border Properties */
+    border: none;
+    border-radius: 50px;
+    /* Sizing */
+    width: 15vw;
 }
+/* Footer Section */
+footer{
+    /* Flex Properties */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Sizing */
+    height: 18vh;
+    /* Background Properties */
+    background-color:#436396;
+}
+
