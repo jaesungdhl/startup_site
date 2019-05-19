@@ -163,7 +163,6 @@ hr{
     display: flex;
     flex-wrap: wrap;
     /* Sizing */
-    height: 70vh;
     width: 70%;
     /* Spacing */
     margin: 0 auto;
@@ -308,3 +307,44 @@ footer{
     background-color:#436396;
 }
 
+@media screen and (max-width: 800px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .brand{
+        margin: 0;
+    }
+    .about-us{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    .about-item{
+        margin: 2vh 2vw;
+    }
+    .jumbotron{
+        margin: 0 5em;
+        margin-bottom: 1em;
+    }
+    .gallery{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .options{
+        flex-direction: column;
+    }
+    .option{
+        margin: 1.5em;
+    }
+    .subscription{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribe{
+        margin-top: 2em;
+        transform: scale(1.5);
+    }
+}
